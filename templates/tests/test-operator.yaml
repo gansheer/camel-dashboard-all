@@ -31,10 +31,10 @@ spec:
     command: ['sh', '-c']
     args:
     - |
-      if [ "{{ index .Values "camel-dashboard-operator" "enabled" }}" = "true" ]; then
+      if [ "{{ index .Values "camel-monitor-operator" "enabled" }}" = "true" ]; then
         set -e
         echo "========================================="
-        echo "Testing Camel Dashboard Operator"
+        echo "Testing Camel Monitor Operator"
         echo "========================================="
         echo ""
         echo "Note: Operator does not expose HTTP services for testing"
@@ -44,6 +44,6 @@ spec:
         echo "Operator test: PASSED"
         echo "========================================="
       else
-        echo "Camel Dashboard Operator is disabled - skipping test"
+        echo "Camel Monitor Operator is disabled - skipping test"
       fi
   restartPolicy: Never

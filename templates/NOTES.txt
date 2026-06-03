@@ -3,8 +3,8 @@ Thank you for installing {{ .Chart.Name }}!
 Your release is named {{ .Release.Name }}.
 
 Components installed:
-{{- if index .Values "camel-dashboard-operator" "enabled" }}
-- Camel Dashboard Operator ✓
+{{- if index .Values "camel-monitor-operator" "enabled" }}
+- Camel Monitor Operator ✓
 {{- end }}
 {{- if index .Values "camel-dashboard-console" "enabled" }}
 - Camel Dashboard Console ✓
@@ -38,6 +38,6 @@ Console Plugin:
 
 For more information, visit:
   - https://camel-tooling.github.io/camel-dashboard/
-  - https://github.com/camel-tooling/camel-dashboard-operator
+  - https://github.com/camel-tooling/camel-monitor-operator
   - https://github.com/camel-tooling/camel-dashboard-console
   - https://github.com/hawtio/hawtio-online

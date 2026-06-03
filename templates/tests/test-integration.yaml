@@ -39,9 +39,9 @@ spec:
       TOTAL_COMPONENTS=0
       REACHABLE_COMPONENTS=0
 
-      if [ "{{ index .Values "camel-dashboard-operator" "enabled" }}" = "true" ]; then
+      if [ "{{ index .Values "camel-monitor-operator" "enabled" }}" = "true" ]; then
         echo ""
-        echo "Checking Camel Dashboard Operator..."
+        echo "Checking Camel Monitor Operator..."
         echo "ℹ Operator does not expose services - presence validated by Helm"
         TOTAL_COMPONENTS=$((TOTAL_COMPONENTS + 1))
         REACHABLE_COMPONENTS=$((REACHABLE_COMPONENTS + 1))
