@@ -38,8 +38,8 @@ spec:
       echo "========================================="
       echo ""
       echo "Enabled Components:"
-      if [ "{{ index .Values "camel-dashboard-operator" "enabled" }}" = "true" ]; then
-        echo "  ✓ Camel Dashboard Operator"
+      if [ "{{ index .Values "camel-monitor-operator" "enabled" }}" = "true" ]; then
+        echo "  ✓ Camel Monitor Operator"
       fi
       if [ "{{ index .Values "camel-dashboard-console" "enabled" }}" = "true" ]; then
         echo "  ✓ Camel Dashboard Console"
